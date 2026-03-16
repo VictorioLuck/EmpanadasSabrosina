@@ -176,11 +176,11 @@
             let porcentaje = 0;
 
             if (prob <= 95) {
-                // 95% de probabilidad: Descuento del 2% al 8%
-                porcentaje = Math.floor(Math.random() * (8 - 2 + 1)) + 2;
+                // 95% de probabilidad: Descuento del 2% al 6%
+                porcentaje = Math.floor(Math.random() * (6 - 2 + 1)) + 2;
             } else {
-                // 5% de probabilidad: Descuento del 9% al 15%
-                porcentaje = Math.floor(Math.random() * (15 - 9 + 1)) + 9;
+                // 5% de probabilidad: Descuento del 7% al 12%
+                porcentaje = Math.floor(Math.random() * (12 - 7 + 1)) + 9;
             }
 
             descuentoAplicado = porcentaje;

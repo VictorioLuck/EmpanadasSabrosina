@@ -646,9 +646,13 @@
         let porcentaje = 0;
 
         if (prob <= 95) {
-            porcentaje = Math.floor(Math.random() * (4)) + 2;
+            // Rango del 95%: 1% a 4%
+            // (4 - 1 + 1) = 4 valores posibles (1, 2, 3, 4)
+            porcentaje = Math.floor(Math.random() * 4) + 1;
         } else {
-            porcentaje = Math.floor(Math.random() * (5)) + 6;
+            // Rango del 5%: 5% a 7%
+            // (7 - 5 + 1) = 3 valores posibles (5, 6, 7)
+            porcentaje = Math.floor(Math.random() * 3) + 5;
         }
 
         descuentoAplicado = porcentaje;
